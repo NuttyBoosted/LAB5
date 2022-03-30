@@ -7,16 +7,16 @@ using namespace std;
 int main() {
 	locale::global(locale(""));
 	int numeropontos;
-	cout << "Numeros que pontos que ter utilizar"; 
+	cout << "Numeros que pontos que quer utilizar"; 
 	cin >> numeropontos;
 	if (numeropontos <= 1)
-		cout << "apaz mas que é isto...";
+		cout << "apaz mas que Ã© isto...";
 	else {
 		ponto* vPontos = new ponto[numeropontos];
 		lePontos(vPontos, numeropontos);
 		escrevePontos(vPontos, numeropontos);
 		retangulo* pRetangulo = defineRectangulo(vPontos, numeropontos);
-		cout << "Area do triangulo é : " << calculaArea(pRetangulo);
+		cout << "Area do triangulo Ã© : " << calculaArea(pRetangulo);
 		delete[]vPontos;
 		delete pRetangulo;
 	}
